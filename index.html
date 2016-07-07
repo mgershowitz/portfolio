@@ -6,61 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matt Gershowitz</title>
   <link rel="stylesheet" href="https://s.mlcdn.co/animate.css">
+  <link rel="stylesheet" href="./css/palette.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
-  <header>
-      <section id='name' class='animated bounceInLeft'>
-        <div>
-          <h2>Matt Gershowitz</h2>
-          <h3 id='title'>Full Stack Developer</h3>
-        </div>
-        <div>
-          <img id="phone" src="./img/phone.ico" alt="">
-        </div>
-      </section>
-      <section id='contact'>
-        <ul>
-          <li><a href="mailto:mattgershowitz1@gmail.com">mattgershowitz@gmail.com</a></li>
-          <li>516-521-5169</li>
-        </ul>
+  <header id='nav'>
+      <section class='animated bounceInLeft'>
+        <h2>Matt Gershowitz</h2>
+          <ul>
+            <li class='navB' id='projB'>TOUCHES</li>
+            <li>|</li>
+            <li class='navB' id='linksB'>LINKS</li>
+            <li>|</li>
+            <li class='navB' id='bioB'>WHOAMI</li>
+          </ul>
       </section>
   </header>
-  <div id='nav' class="animated fadeIn">
-    <ul>
-      <li class='navB' id='projB'>Projects</li>
-      <li>|</li>
-      <li class='navB' id='linksB'>Links</li>
-      <li>|</li>
-      <li class='navB' id='bioB'>About</li>
-    </ul>
+  <div id="welcome" class='displays'>
+    <h1 class='title'>Welcome</h1>
   </div>
-  <div id='projects'>
-    <ul>
-      <li><a href="http://mgershowitz.github.io/purple-rain-game-yahtzee/"><img class="img" src="./img/yahtzee.png" alt=""></a></li>
-      <li><a href="https://stunning-lake-clark-17018.herokuapp.com/"><img class="img" src="./img/happy-hour.png" alt=""></a></li>
-    </ul>
+  <div id='projects' class='displays'>
+      <h2 class='title'>Some Sweet Apps</h2>
+      <a href="http://mgershowitz.github.io/purple-rain-game-yahtzee/"><img class="img" src="./img/yahtzee.png" alt=""></a>
+      <a href="https://stunning-lake-clark-17018.herokuapp.com/"><img class="img" src="./img/happy-hour.png" alt=""></a>
   </div>
-  <div id='links'>
-    <ul>
-      <li class='personal-links'><a href="https://github.com/mgershowitz"><img class="img" src="./img/github.png" alt=""></a></li>
-      <li class='personal-links'><a href="https://www.linkedin.com/in/mgershowitz"><img class="img" src="./img/LinkedIn_Logo.svg.png" alt=""></a></li>
-      <li class='personal-links'><a href="http://www.imdb.com/name/nm3982215/"><img class="img" src="./img/imdb.jpg" alt=""></a></li>
-    </ul>
+  <div id='links' class='displays'>
+    <h2 class="title">You'll Never Leave Me...</h2>
+
+      <a class='personal-links' href="https://github.com/mgershowitz"><img class="img" src="./img/github.png" alt=""></a>
+      <a class='personal-links' href="https://www.linkedin.com/in/mgershowitz"><img class="img" src="./img/LinkedIn_Logo.svg.png" alt=""></a>
+      <a class='personal-links' href="http://www.imdb.com/name/nm3982215/"><img class="img" src="./img/imdb.jpg" alt=""></a>
+
   </div>
-  <div id="about">
-    <section>
+  <div id="about" class='displays'>
+      <h2 class='title'>LOVE ME!!!!!</h2>
       <img src="./img/mattCongestedCat.png" alt="">
       <div id="bio">
         <p>Matt Gershowitz is a New York native and Full-Stack Web Developer. Specializing in Javascript, Node, Ruby on Rails, and React, he is the man with the plan to make your web apps jam. Matt is also associated with the independent film production company; Congested Cat, and is one of the three firey heads of Plum Dumpster.</p>
       </div>
-    </section>
 
   </div>
-  <div id='footer'>Matt Gershowitz &copy 2016</div>
+  <div class='displays' id='contact'>
+    <h3 class='title'>Call me, beep me, if you want to reach me</h3>
+    <ul>
+      <li id='email'><img class='reachOut'src="./img/email.png" alt=""></li>
+      <li id='slack'><img class='reachOut'src="./img/slack.png" alt=""></li>
+      <li id='phone'><img class='reachOut'src="./img/phone.png" alt=""></li>
+    </ul>
+  </div>
 </body>
+    <div id='footer'>Matt Gershowitz &copy 2016</div>
 </html>
 
 

@@ -1,65 +1,70 @@
+const greetings = [
+                    'Welcome',
+                    'Good to see you',
+                    'Valar Morghulis',
+                    'Don\'t spend all day inside',
+                    'What\'s the deal with airline food?',
+                    'I believe',
+                    'Wubba Lubba Dub Dubs!!!',
+                    'Hello',
+                    'Be excellent to each other'
+                    ]
+
+let welcomeMessage = () => {
+  let i = Math.floor(Math.random()*greetings.length)
+  greetings[i]
+}
+
+
+
+
 $(()=> {
+console.log('connected')
 
-$('#phone').on('mouseover', (e) => {
-  $('#phone').addClass('animated flash')
-  .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-  $('#phone').removeClass()
-});
-})
 
-$('#phone').on('click', (e) => {
-  $('#contact').fadeToggle('fast')
-  $('#phone').off('mouseover')
+// setInterval(function(){
+//     $("#welcome h1").text(welcomeMessage).fadeIn("slow");
+//     $("#welcome h1").delay(40).fadeOut("slow");
+// }, 18);
+
+// $('#email img').on('mouseover', function(e) {
+//   $(this).toggle('show'/'hide')();
+//   $('#email').text('mattgershowitz1@gmail.com').addClass('animated bounceInUp')
+//   .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+//   $(this).removeClass().addClass('reachOut')
+// });
+// })
+
+$('#email').on('click', function(e) {
+  $(this).text("")
+  $('#email img').toggle('show'/'hide')
 })
 
 $('#bioB').on('click', (e) =>{
-  if(!$('#links').css('display', 'none')){
-    $('#links').fadeToggle('fast');
-  }
-  if(!$('#projects').css('display', 'none')){
-    $('#projects').fadeToggle('fast');
-  }
-  $('#about').fadeToggle('fast')
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top -100
+    }, 500);
 })
 
 $('#linksB').on('click', (e) =>{
-  if(!$('#about').css('display', 'none')){
-  $('#about').fadeToggle('fast');
-  }
-  if(!$('#projects').css('display', 'none')){
-    $('#links').fadeToggle('fast');
-  }
-  $('#links').fadeToggle('fast')
+  $('html, body').animate({
+        scrollTop: $("#links").offset().top -75
+    }, 500);
 })
 
 $('#projB').on('click', (e) =>{
-  if(!$('#about').css('display', 'none')){
-  $('#about').fadeToggle('fast');
-  }
-  if(!$('#links').css('display', 'none')){
-    $('#links').fadeToggle('fast');
-  }
-  $('#projects').fadeToggle('fast')
+  $('html, body').animate({
+        scrollTop: $("#projects").offset().top -100
+    }, 500);
 })
 
-$('#projB').on('mouseover', (e) =>{
-  $('#projB').css('background-color', 'deepskyblue');
+$('.navB').on('mouseover', function(e) {
+  $(this).css('background-color', '#B6B6B6');
 })
-$('#projB').on('mouseout', (e) =>{
-  $('#projB').css('background-color', 'firebrick');
+$('.navB').on('mouseout', function(e) {
+  $(this).css('background-color', '#03A9F4');
 })
-$('#bioB').on('mouseover', (e) =>{
-  $('#bioB').css('background-color', 'deepskyblue');
-})
-$('#bioB').on('mouseout', (e) =>{
-  $('#bioB').css('background-color', 'firebrick');
-})
-$('#linksB').on('mouseover', (e) =>{
-  $('#linksB').css('background-color', 'deepskyblue');
-})
-$('#linksB').on('mouseout', (e) =>{
-  $('#linksB').css('background-color', 'firebrick');
-})
+
 
 $('.img').on('mouseover', function (e) {
     $(this).css('width', "315px")

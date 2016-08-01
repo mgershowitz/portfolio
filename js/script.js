@@ -26,17 +26,17 @@ $(()=> {
 
 
 
-setInterval(function
-  (){
-    $("#welcome h1").addClass('animated bounceOutRight')
-    .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-    $(this).removeClass().addClass('title').text(greetings[i]).addClass('animated bounceInLeft')
-    .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-    $(this).removeClass().addClass('title');
-  })
-  })
-    i = Math.floor(Math.random()*greetings.length)
-}, 3500);
+// setInterval(function
+//   (){
+//     $("#welcome h1").addClass('animated bounceOutRight')
+//     .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+//     $(this).removeClass().addClass('title').text(greetings[i]).addClass('animated bounceInLeft')
+//     .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+//     $(this).removeClass().addClass('title');
+//   })
+//   })
+//     i = Math.floor(Math.random()*greetings.length)
+// }, 3500);
 
 
 $('#email').on('click', function(e) {

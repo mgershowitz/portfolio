@@ -19,61 +19,68 @@
       <section class='animated bounceInLeft'>
         <h2 id='me'>Matt Gershowitz</h2>
           <ul>
-            <li class='navB' id='projB'><a href="">projects</a></li>
-            <li class='navB' id='bioB'><a href="">about</a></li>
-            <li class='navB' id='ringB'><a href="">contact</a></li>
+            <li class='navB' id='projB'>projects</li>
+            <!-- <li class='navB' id='bioB'>about</li> -->
+            <li class='navB' id='ringB'>contact</li>
           </ul>
       </section>
   </header>
   <div id='projects' class='displays'>
       <section>
-        <div>
-
-        <div>
-          <a href="/"><img class="img" src="./img/netflix_and_grill.png" alt=""></a>
+          <div id="imgContainer">
+          <div class="row">
+            <div id="nagB">
+              <a href="/"><img class="img" src="./img/netflix_and_grill.png" alt=""></a>
+            </div>
+            <div id="cookB">
+              <a href="http://cook-it.herokuapp.com/"><img class="img" src="./img/cookit.png" alt=""></a>
+            </div>
+          </div>
+          <div class="row">
+            <div id="happyB">
+              <a href="https://stunning-lake-clark-17018.herokuapp.com/"><img class="img" src="./img/happy-hour.png" alt=""></a>
+            </div>
+            <div id="yahtzeeB">
+              <a href="http://mgershowitz.github.io/purple-rain-game-yahtzee/"><img class="img" src="./img/yahtzee.png" alt=""></a>
+            </div>
+          </div>
         </div>
-        <!-- <div>
-          <h3>Netflix and Grill</h3>
-          <ul>
-            <li>- Ruby on Rails</li>
-            <li>- PostgreSQL</li>
-            <li>- JQuery</li>
-          </ul>
-        </div> -->
-        <div>
-          <a href="http://cook-it.herokuapp.com/"><img class="img" src="./img/cookit.png" alt=""></a>
-        </div>
-        <!-- <div>
-          <h3>CookIt</h3>
-          <ul>
-            <li>- React.js</li>
-            <li>- Node.js</li>
-            <li>- PostgreSQL</li>
-            <li>- Javascript</li>
-          </ul>
-        </div> -->
-        </div>
-        <div>
-        <div>
-          <a href="https://stunning-lake-clark-17018.herokuapp.com/"><img class="img" src="./img/happy-hour.png" alt=""></a>
-        </div>
-        <!-- <div>
-          <h3>Happy Hour</h3>
-          <ul>
-            <li>- Node.js</li>
-            <li>- MongoDB</li>
-            <li>- Javascript</li>
-          </ul>
-        </div> -->
-        <div>
-          <a href="http://mgershowitz.github.io/purple-rain-game-yahtzee/"><img class="img" src="./img/yahtzee.png" alt=""></a>
-        </div>
-        <!-- <div>
-          <h3>Yahtzee!!</h3>
-          <ul>
-            <li>- Javascript</li>
-          </ul>
-        </div> -->
+        <div id='textContainer'>
+          <div id="nag">
+            <h3>Netflix and Grill</h3>
+            <p>Neflix and Grill is an app that allows you to search various television shows by title. Once the search results are returned, you can add them to you "BBQueue" where you can review your choices and see what food items have been paired.</p>
+            <ul>
+              <li>- Ruby on Rails</li>
+              <li>- PostgreSQL</li>
+              <li>- JQuery</li>
+            </ul>
+          </div>
+          <div id="cook">
+            <h3>CookIt</h3>
+            <p>CookIt allows you to search for recipes by either your favorite cuisine or by any ingriendents you have in your kitchen. Returning various options, the user can choose a recipe, be given a list of ingredients, and compare it to what is already stored in their pantry, letting them know what they need to buy to prepare the meal</p>
+            <ul>
+              <li>- React.js</li>
+              <li>- Node.js</li>
+              <li>- PostgreSQL</li>
+              <li>- Javascript</li>
+            </ul>
+          </div>
+          <div id='happy'>
+            <h3>Happy Hour</h3>
+            <p>Happy Hour poses a series of questions to the potential bar fly in order to gauge how they're feeling that day and ultimately what drink would best suite them. It also pairs the drink with a nice drink related quote.</p>
+            <ul>
+              <li>- Node.js</li>
+              <li>- MongoDB</li>
+              <li>- Javascript</li>
+            </ul>
+          </div>
+          <div id='yahtzee'>
+            <h3>Yahtzee!!</h3>
+            <p>Play everyone's favorite game Yahtzee!! Roll the dice three times each turn to try and get the highest score possible. Make sure if you get five of a kind to yell Yahtzee!!!</p>
+            <ul>
+              <li>- Javascript</li>
+            </ul>
+          </div>
         </div>
       </section>
   </div>

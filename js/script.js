@@ -11,15 +11,21 @@ $('#bioB a').on('click', (e) =>{
 
 
 
-$('#projB a').on('click', (e) =>{
+$('#projB').on('click', (e) =>{
   $('html, body').animate({
         scrollTop: $("#projects").offset().top -100
     }, 500);
 })
 
-$('#ringB a').on('click', (e) =>{
+$('#ringB').on('click', (e) =>{
   $('html, body').animate({
         scrollTop: $("#contact").offset().top -100
+    }, 500);
+})
+
+$('#bioB').on('click', (e) =>{
+  $('html, body').animate({
+        scrollTop: $("#about").offset().top -100
     }, 500);
 })
 
@@ -31,9 +37,57 @@ $('.navB a').on('mouseout', function(e) {
 })
 
 
-// $('.img').on('mouseover', function (e) {
-//     $(this).css('width', "315px")
-// })
+$('#nagB').on('mouseover', function (e) {
+    $('#nagB img').css('box-shadow','5px 5px 5px grey')
+    $('#nag').toggle('fast', function() {
+    if ($(this).is(':visible'))
+        $(this).css('display','inline-block');
+  })
+})
+
+$('#nagB').on('mouseout', function (e) {
+    $('#nagB img').css('box-shadow','2px 2px 2px grey')
+    $('#nag').css('display','none')
+})
+
+$('#cookB').on('mouseover', function (e) {
+    $('#cookB img').css('box-shadow','5px 5px 5px grey')
+    $('#cook').toggle('fast', function() {
+    if ($(this).is(':visible'))
+        $(this).css('display','inline-block');
+  })
+})
+
+$('#cookB').on('mouseout', function (e) {
+    $('#cookB img').css('box-shadow','2px 2px 2px grey')
+    $('#cook').css('display','none')
+})
+
+$('#happyB').on('mouseover', function (e) {
+    $('#happyB img').css('box-shadow','5px 5px 5px grey')
+    $('#happy').toggle('fast', function() {
+    if ($(this).is(':visible'))
+        $(this).css('display','inline-block');
+  })
+})
+
+$('#happyB').on('mouseout', function (e) {
+    $('#happyB img').css('box-shadow','2px 2px 2px grey')
+    $('#happy').css('display','none')
+})
+
+$('#yahtzeeB').on('mouseover', function (e) {
+    $('#yahtzeeB img').css('box-shadow','5px 5px 5px grey')
+    $('#yahtzee').toggle('fast', function() {
+    if ($(this).is(':visible'))
+        $(this).css('display','inline-block');
+  })
+})
+
+$('#yahtzeeB').on('mouseout', function (e) {
+    $('#yahtzeeB img').css('box-shadow','2px 2px 2px grey')
+    $('#yahtzee').css('display','none')
+})
 
 // $('.img').on('mouseout', function (e) {
 //   $(this).css('width', "300px")

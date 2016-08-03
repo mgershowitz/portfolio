@@ -45,6 +45,7 @@
   font-weight: lighter;
   margin-left: 10%;
   display: inline-block;
+  cursor: pointer;
 }
 
 .displays {

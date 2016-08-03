@@ -89,6 +89,13 @@ $('#yahtzeeB').on('mouseout', function (e) {
     $('#yahtzee').css('display','none')
 })
 
+$('#about img').on('mouseover', function (e) {
+    $(this).css('box-shadow','5px 5px 5px grey')
+})
+
+$('#about img').on('mouseout', function (e) {
+    $(this).css('box-shadow','2px 2px 2px grey')
+})
 // $('.img').on('mouseout', function (e) {
 //   $(this).css('width', "300px")
 

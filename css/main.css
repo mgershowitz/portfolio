@@ -148,6 +148,7 @@ vertical-align: top;
   border: 3px #B6B6B6 solid;
   border-radius: 150px;
   box-shadow: 2px 2px 2px grey;
+  display: inline-block;
 }
 
 #contact {

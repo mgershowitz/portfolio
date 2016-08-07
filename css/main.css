@@ -32,10 +32,10 @@
 
 #nav ul {
   position: fixed;
-  width:300px;
+  width:400px;
   /*display: inline-block;*/
   top: 1%;
-  right: -2%;
+  right: 3%;
 }
 
 #nav li {

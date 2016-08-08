@@ -98,22 +98,22 @@ $('#about img').on('mouseout', function (e) {
 })
 
 
-$('.reachOut').eq(1).on('mouseover', function (e) {
-  $(this).attr('src', "./img/number.png")
+// $('.reachOut').eq(1).on('mouseover', function (e) {
+//   $(this).attr('src', "./img/number.png").css('width', '7vw')
 
-})
+// })
 
-$('.reachOut').eq(1).on('mouseout', function (e) {
-  $(this).attr('src', "./img/phone.png")
+// $('.reachOut').eq(1).on('mouseout', function (e) {
+//   $(this).attr('src', "./img/phone.png").css('width', '4vw')
 
-})
-$('.reachOut').eq(0).on('mouseover', function (e) {
-  $(this).attr('src', "./img/slackname.png")
+// })
+// $('.reachOut').eq(0).on('mouseover', function (e) {
+//   $(this).attr('src', "./img/slackname.png").css('width', '7vw')
 
-})
+// })
 
-$('.reachOut').eq(0).on('mouseout', function (e) {
-  $(this).attr('src', "./img/slack.png")
+// $('.reachOut').eq(0).on('mouseout', function (e) {
+//   $(this).attr('src', "./img/slack.png").css('width', '4vw')
 
 })
 

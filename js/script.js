@@ -115,7 +115,7 @@ $('#about img').on('mouseout', function (e) {
 // $('.reachOut').eq(0).on('mouseout', function (e) {
 //   $(this).attr('src', "./img/slack.png").css('width', '4vw')
 
-})
+// })
 
 })
 

@@ -55,8 +55,9 @@
 }
 
 #projects section {
+  height: 50vh;
   margin-top: 12%;
-  margin-left: 7%;
+  margin-left: 5%;
   margin-bottom:11%;
   width:100%;
   display: inline-block;
@@ -70,7 +71,7 @@
 
 #projects img{
   /*display: inline-block;*/
-  width: 350px;
+  width: 27vw;
   border:1px solid black;
   box-shadow: 2px 2px 2px grey;
   opacity: .85;
@@ -85,7 +86,7 @@
   position:relative;
   display: inline-block;
   text-align: left;
-  width:355px;
+  width:28vw;
 }
 
 #imgContainer {
@@ -96,6 +97,8 @@ vertical-align: top;
 #textContainer {
 display: inline-block;
 vertical-align: top;
+width:28vw;
+margin-left: 2%;
 }
 
 #projects section div ul{
@@ -112,7 +115,7 @@ vertical-align: top;
   margin-left: 3%;
   vertical-align: top;
   display: none;
-  width: 340px;
+  width: 30vw;
 
 }
 
@@ -129,13 +132,11 @@ vertical-align: top;
   display: inline-block;
   margin-left: 5%;
   margin-bottom: 5%;
-  /*background-color:#CFCFCF;*/
 }
 
 #bio p {
-  position: absolute;
   top: 30%;
-  width: 500px;
+  width: 40vw;
 }
 
 
@@ -144,7 +145,7 @@ vertical-align: top;
   margin-right: 0 auto;
   margin-top: 5%;
   margin-left: 19%;
-  width: 200px;
+  width: 15vw;
   border: 3px #B6B6B6 solid;
   border-radius: 150px;
   box-shadow: 2px 2px 2px grey;
@@ -163,13 +164,13 @@ vertical-align: top;
 
 
 #contact li{
-  width:50px;
+  /*width:50px;*/
   display: inline-block;
   margin: 4%;
 
 }
 #contact img{
-  width:50px;
+  width:4vw;
   display: inline-block;
   margin: 4%;
 }
@@ -179,7 +180,7 @@ vertical-align: top;
    text-align: left;
    bottom:0;
    width:100%;
-   height:30px;
+   height:4vh;
 
 }
 

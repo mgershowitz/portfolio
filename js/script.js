@@ -96,12 +96,26 @@ $('#about img').on('mouseover', function (e) {
 $('#about img').on('mouseout', function (e) {
     $(this).css('box-shadow','2px 2px 2px grey')
 })
-// $('.img').on('mouseout', function (e) {
-//   $(this).css('width', "300px")
-
-// })
 
 
+$('.reachOut').eq(1).on('mouseover', function (e) {
+  $(this).attr('src', "./img/number.png")
+
+})
+
+$('.reachOut').eq(1).on('mouseout', function (e) {
+  $(this).attr('src', "./img/phone.png")
+
+})
+$('.reachOut').eq(0).on('mouseover', function (e) {
+  $(this).attr('src', "./img/slackname.png")
+
+})
+
+$('.reachOut').eq(0).on('mouseout', function (e) {
+  $(this).attr('src', "./img/slack.png")
+
+})
 
 })
 

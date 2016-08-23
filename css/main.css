@@ -204,7 +204,7 @@ a{
   and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+   {
     body {
       text-align: center;
     }
@@ -229,6 +229,10 @@ a{
     #nav h2 {
       left:5%;
     }
+
+    #nav {
+      height: 12vh;
+    }
     #bio {
       width: 50%;
       display: block;
@@ -241,12 +245,11 @@ a{
     }
     .mobileDesc {
       display: inline-block;
-      text-align: center;
-    }
+      }
 
 
     .mobileDesc p, .mobileDesc h3 {
-      width: 70vw;
+      width: 100vw;
     }
 
     .mobileDesc h3 {

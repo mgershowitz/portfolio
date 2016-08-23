@@ -29,6 +29,13 @@ $('#bioB').on('click', (e) =>{
     }, 500);
 })
 
+$('.navB').on('mouseover', function(e) {
+  $(this).css('color', '#90CAF9');
+})
+$('.navB').on('mouseout', function(e) {
+  $(this).css('color', '#ffffff');
+})
+
 $('.navB a').on('mouseover', function(e) {
   $(this).css('color', '#90CAF9');
 })

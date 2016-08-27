@@ -32,7 +32,6 @@
   position: fixed;
   width:400px;
   /*display: inline-block;*/
-  top: 1%;
   right: 3%;
 }
 
@@ -72,7 +71,7 @@
   width: 27vw;
   border:1px solid black;
   box-shadow: 2px 2px 2px grey;
-  opacity: .85;
+  opacity: .9;
 
 }
 

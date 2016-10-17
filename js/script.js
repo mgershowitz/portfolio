@@ -46,19 +46,12 @@ $('.navB a').on('mouseout', function(e) {
 
 $('#nagB').on('mouseover', function (e) {
     $('#nagB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
-    if ($('#cook').is(':visible')){
-      $('#cook').css('display','none')
-    }
-    if ($('#happy').is(':visible')){
-      $('#happy').css('display','none')
-    }
-    if ($('#yahtzee').is(':visible')){
-      $('#yahtzee').css('display','none')
-    }
-    $('#nag').toggle('fast', function() {
-    if ($(this).is(':visible'))
-        $(this).css('display','inline-block');
-  })
+    $('#cook').css('display','none')
+    $('#happy').css('display','none')
+    $('#yahtzee').css('display','none')
+    $('#nag').css('display','inline-block');
+
+
 })
 
 $('#nagB').on('mouseout', function (e) {
@@ -67,19 +60,12 @@ $('#nagB').on('mouseout', function (e) {
 
 $('#cookB').on('mouseover', function (e) {
     $('#cookB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
-    if ($('#nag').is(':visible')){
-      $('#nag').css('display','none')
-    }
-    if ($('#happy').is(':visible')){
-      $('#happy').css('display','none')
-    }
-    if ($('#yahtzee').is(':visible')){
-      $('#yahtzee').css('display','none')
-    }
-    $('#cook').toggle('fast', function() {
-    if ($(this).is(':visible'))
-        $(this).css('display','inline-block');
-  })
+    $('#nag').css('display','none')
+    $('#happy').css('display','none')
+    $('#yahtzee').css('display','none')
+      $('#cook').css('display','inline-block');
+
+
 })
 
 $('#cookB').on('mouseout', function (e) {
@@ -88,19 +74,10 @@ $('#cookB').on('mouseout', function (e) {
 
 $('#happyB').on('mouseover', function (e) {
     $('#happyB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
-    if ($('#cook').is(':visible')){
-      $('#cook').css('display','none')
-    }
-    if ($('#nag').is(':visible')){
-      $('#nag').css('display','none')
-    }
-    if ($('#yahtzee').is(':visible')){
-      $('#yahtzee').css('display','none')
-    }
-    $('#happy').toggle('fast', function() {
-    if ($(this).is(':visible'))
-        $(this).css('display','inline-block');
-  })
+    $('#cook').css('display','none')
+    $('#nag').css('display','none')
+    $('#yahtzee').css('display','none')
+    $('#happy').css('display','inline-block');
 })
 
 $('#happyB').on('mouseout', function (e) {
@@ -109,19 +86,10 @@ $('#happyB').on('mouseout', function (e) {
 
 $('#yahtzeeB').on('mouseover', function (e) {
     $('#yahtzeeB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
-    if ($('#cook').is(':visible')){
-      $('#cook').css('display','none')
-    }
-    if ($('#happy').is(':visible')){
-      $('#happy').css('display','none')
-    }
-    if ($('#nag').is(':visible')){
-      $('#nag').css('display','none')
-    }
-    $('#yahtzee').toggle('fast', function() {
-    if ($(this).is(':visible'))
-        $(this).css('display','inline-block');
-  })
+    $('#cook').css('display','none')
+    $('#happy').css('display','none')
+    $('#nag').css('display','none')
+    $('#yahtzee').css('display','inline-block');
 })
 
 $('#yahtzeeB').on('mouseout', function (e) {

@@ -50,12 +50,11 @@ $('#nagB').on('mouseover', function (e) {
     $('#happy').css('display','none')
     $('#yahtzee').css('display','none')
     $('#nag').css('display','inline-block');
-
-
 })
 
 $('#nagB').on('mouseout', function (e) {
     $('#nagB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
+    $('#nag').css('display','none')
 })
 
 $('#cookB').on('mouseover', function (e) {
@@ -63,13 +62,12 @@ $('#cookB').on('mouseover', function (e) {
     $('#nag').css('display','none')
     $('#happy').css('display','none')
     $('#yahtzee').css('display','none')
-      $('#cook').css('display','inline-block');
-
-
+    $('#cook').css('display','inline-block');
 })
 
 $('#cookB').on('mouseout', function (e) {
     $('#cookB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
+    $('#cook').css('display','none')
 })
 
 $('#happyB').on('mouseover', function (e) {
@@ -82,6 +80,7 @@ $('#happyB').on('mouseover', function (e) {
 
 $('#happyB').on('mouseout', function (e) {
     $('#happyB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
+    $('#happy').css('display','none')
 })
 
 $('#yahtzeeB').on('mouseover', function (e) {
@@ -94,6 +93,7 @@ $('#yahtzeeB').on('mouseover', function (e) {
 
 $('#yahtzeeB').on('mouseout', function (e) {
     $('#yahtzeeB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
+    $('#yahtzee').css('display','none')
 })
 
 $('#about img').on('mouseover', function (e) {

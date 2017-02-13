@@ -100,12 +100,12 @@ $('#searchB').on('mouseover', function (e) {
     $('#cook').css('display','none')
     $('#happy').css('display','none')
     $('#nag').css('display','none')
-    $('#yahtzee').css('display','inline-block');
+    $('#search').css('display','inline-block');
 })
 
 $('#searchB').on('mouseout', function (e) {
     $('#searchB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
-    $('#yahtzee').css('display','none')
+    $('#search').css('display','none')
 })
 
 $('#about img').on('mouseover', function (e) {

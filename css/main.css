@@ -47,18 +47,18 @@
 }
 
 .displays {
-  position: relative;
+  /*position: relative;*/
   width:101%;
   left: -7px;
 }
 
 #projects section {
   height: 50vh;
-  margin-top: 12%;
+  padding-top: 15%;
   margin-left: 5%;
   margin-bottom:11%;
   width:100%;
-  display: inline-block;
+  display: flex;
   /*background-color: #CFCFCF;*/
 }
 
@@ -77,19 +77,21 @@
 
 }
 
-
 .row {
-  /*display: inline-block;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 #nagB, #happyB, #cookB, #yahtzeeB, #searchB {
-  position:relative;
+  position: relative;
   display: inline-block;
   text-align: left;
   width:28vw;
 }
 
 #imgContainer {
-display: inline-block;
+display: flex;
 vertical-align: top;
 }
 
@@ -110,7 +112,7 @@ margin-left: 2%;
   display: block;
 }
 
-#nag, #cook, #happy, #yahtzee {
+#nag, #cook, #happy, #yahtzee, #search {
   position: relative;
   margin-left: 3%;
   vertical-align: top;
@@ -149,6 +151,7 @@ margin-left: 2%;
   box-shadow: 2px 2px 2px grey;
   /*height: 30vh;*/
   margin-top: 10%;
+  margin-left: -2%;
 
 }
 

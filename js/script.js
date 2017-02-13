@@ -9,8 +9,6 @@ $('#bioB a').on('click', (e) =>{
     }, 500);
 })
 
-
-
 $('#projB').on('click', (e) =>{
   $('html, body').animate({
         scrollTop: $("#projects").offset().top -100
@@ -28,6 +26,7 @@ $('#bioB').on('click', (e) =>{
         scrollTop: $("#about").offset().top -100
     }, 500);
 })
+
 
 $('.navB').on('mouseover', function(e) {
   $(this).css('color', '#90CAF9');
@@ -93,6 +92,19 @@ $('#yahtzeeB').on('mouseover', function (e) {
 
 $('#yahtzeeB').on('mouseout', function (e) {
     $('#yahtzeeB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
+    $('#yahtzee').css('display','none')
+})
+
+$('#searchB').on('mouseover', function (e) {
+    $('#searchB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
+    $('#cook').css('display','none')
+    $('#happy').css('display','none')
+    $('#nag').css('display','none')
+    $('#yahtzee').css('display','inline-block');
+})
+
+$('#searchB').on('mouseout', function (e) {
+    $('#searchB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
     $('#yahtzee').css('display','none')
 })
 

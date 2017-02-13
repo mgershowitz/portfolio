@@ -81,7 +81,7 @@
 .row {
   /*display: inline-block;*/
 }
-#nagB, #happyB, #cookB, #yahtzeeB {
+#nagB, #happyB, #cookB, #yahtzeeB, #searchB {
   position:relative;
   display: inline-block;
   text-align: left;
@@ -199,7 +199,17 @@ a{
 .mobileDesc {
   display: none;
 }
+/*#resize {
+  background-color: #ffffff;
+  position: fixed;
+  height: 110vh;
+  width: 110vw;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
 
+  }*/
+/*s*/
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)

@@ -15,16 +15,18 @@
 $(()=> {
 
   //buttons navigate to different places on the page
-  $('#bioB a').on('click', (e) =>{
+  $('#projB').on('click', function(e){
       $('html, body').animate({
-          scrollTop: $("#about").offset().top - 100
+          scrollTop: 0
       }, 500);
+     console.log('click')
   })
 
-  $('#bioB').on('click', (e) =>{
+  $('#ringB').on('click', function(e){
     $('html, body').animate({
-          scrollTop: $("#about").offset().top - 100
+          scrollTop: $("#about").offset().top
       }, 500);
+    console.log('click')
   })
 
   //highlights the nav buttons light blue

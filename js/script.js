@@ -1,142 +1,142 @@
+/*   _____          __    __      ________                    .__                  .__  __
+  /     \ _____ _/  |__/  |_   /  _____/  ___________  _____|  |__   ______  _  _|__|/  |_________
+ /  \ /  \\__  \\   __\   __\ /   \  ____/ __ \_  __ \/  ___/  |  \ /  _ \ \/ \/ /  \   __\___   /
+/    Y    \/ __ \|  |  |  |   \    \_\  \  ___/|  | \/\___ \|   Y  (  <_> )     /|  ||  |  /    /
+\____|__  (____  /__|  |__|    \______  /\___  >__|  /____  >___|  /\____/ \/\_/ |__||__| /_____ \
+        \/     \/                     \/     \/           \/     \/                             \/
+  ___ ___ .________________________   ___ ___ .___   _____    ___________________  ________      _____ _____.___.
+ /   |   \|   \______   \_   _____/  /   |   \|   | /     \   \__    ___/\_____  \ \______ \    /  _  \\__  |   |
+/    ~    \   ||       _/|    __)_  /    ~    \   |/  \ /  \    |    |    /   |   \ |    |  \  /  /_\  \/   |   |
+\    Y    /   ||    |   \|        \ \    Y    /   /    Y    \   |    |   /    |    \|    `   \/    |    \____   |
+ \___|_  /|___||____|_  /_______  /  \___|_  /|___\____|__  /   |____|   \_______  /_______  /\____|__  / ______|
+       \/             \/        \/         \/             \/                     \/        \/         \/\/       */
 
-console.log('connected')
+
 $(()=> {
 
+  //buttons navigate to different places on the page
+  $('#bioB a').on('click', (e) =>{
+      $('html, body').animate({
+          scrollTop: $("#about").offset().top - 100
+      }, 500);
+  })
 
-$('#bioB a').on('click', (e) =>{
+  $('#bioB').on('click', (e) =>{
     $('html, body').animate({
-        scrollTop: $("#about").offset().top -100
-    }, 500);
-})
+          scrollTop: $("#about").offset().top - 100
+      }, 500);
+  })
 
-$('#projB').on('click', (e) =>{
-  $('html, body').animate({
-        scrollTop: $("#projects").offset().top -100
-    }, 500);
-})
+  //highlights the nav buttons light blue
+  const turnBlue = function(e){
+    $(this).css('color', '#90caf9');
+  }
 
-$('#ringB').on('click', (e) =>{
-  $('html, body').animate({
-        scrollTop: $("#contact").offset().top -100
-    }, 500);
-})
+  const turnWhite = function(e){
+    $(this).css('color', '#ffffff');
+  }
 
-$('#bioB').on('click', (e) =>{
-  $('html, body').animate({
-        scrollTop: $("#about").offset().top -100
-    }, 500);
-})
+  $('.navB').hover(turnBlue, turnWhite);
+  $('.navB a').hover(turnBlue, turnWhite);
 
+  //creates a mouseover function that highlights the img and displays the correct description
+  const highlightImg = function(e){
+    $(this).find('img').css('box-shadow','5px 5px 5px grey').css('opacity','1');
 
-$('.navB').on('mouseover', function(e) {
-  $(this).css('color', '#90CAF9');
-})
-$('.navB').on('mouseout', function(e) {
-  $(this).css('color', '#ffffff');
-})
+    switch($(this).attr('id')){
+      case 'cookB':
+        $('#happy').css('display', 'none');
+        $('#nag').css('display', 'none');
+        $('#search').css('display', 'none');
+        $('#yahtzee').css('display', 'none');
+        $('#cook').css('display', 'inline-block');
+      break;
+      case 'happyB':
+        $('#happy').css('display', 'none');
+        $('#nag').css('display', 'none');
+        $('#search').css('display', 'none');
+        $('#yahtzee').css('display', 'none');
+        $('#happy').css('display', 'inline-block');
+      break;
+      case 'nagB':
+        $('#cook').css('display', 'none')
+        $('#happy').css('display', 'none');
+        $('#search').css('display', 'none');
+        $('#yahtzee').css('display', 'none');
+        $('#nag').css('display', 'inline-block');
+      break;
+      case 'searchB':
+        $('#cook').css('display', 'none')
+        $('#happy').css('display', 'none');
+        $('#nag').css('display', 'none');
+        $('#yahtzee').css('display', 'none');
+        $('#search').css('display', 'inline-block');
+      break;
+      case 'yahtzeeB':
+        $('#cook').css('display', 'none')
+        $('#happy').css('display', 'none');
+        $('#nag').css('display', 'none');
+        $('#search').css('display', 'none');
+        $('#yahtzee').css('display', 'inline-block');
+      break;
+      default:
+      break;
+    }
+  }
 
-$('.navB a').on('mouseover', function(e) {
-  $(this).css('color', '#90CAF9');
-})
-$('.navB a').on('mouseout', function(e) {
-  $(this).css('color', '#ffffff');
-})
+  //returns the img to default opacity
+  const leaveDiv = function(e){
+    $(this).find('img').css('box-shadow','2px 2px 2px grey').css('opacity','.85');
+  }
 
+  //adds event listeners
+  $('#nagB').hover(highlightImg, leaveDiv);
+  $('#cookB').hover(highlightImg, leaveDiv);
+  $('#happyB').hover(highlightImg, leaveDiv);
+  $('#searchB').hover(highlightImg, leaveDiv);
+  $('#yahtzeeB').hover(highlightImg, leaveDiv);
 
-$('#nagB').on('mouseover', function (e) {
-    $('#nagB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
-    $('#cook').css('display','none')
-    $('#happy').css('display','none')
-    $('#yahtzee').css('display','none')
-    $('#nag').css('display','inline-block');
-})
+  //toggles drop shadow on my img
+  $('#about img').hover(
+    function (e) {
+      $(this).css('box-shadow','5px 5px 5px grey');
+    },
+    function (e) {
+      $(this).css('box-shadow','2px 2px 2px grey');
+    }
+  );
 
-$('#nagB').on('mouseout', function (e) {
-    $('#nagB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
-    $('#nag').css('display','none')
-})
+  //adds color to the conatct images by replacing the src
+  $('#contact').children().hover(
+    function(e){
+      switch($(this).attr('id')){
+        case 'email':
+          $(this).find('img').attr('src','./img/emailSelect.png');
+        break;
+        case 'github':
+          $(this).find('img').attr('src','./img/githubSelect.png');
+        break;
+        default:
+          $(this).find('img').attr('src','./img/linkedinSelect.png');
+        break;
+      }
+    },
+    function(e){
+      switch($(this).attr('id')){
+        case 'email':
+          $(this).find('img').attr('src','./img/email.png');
+        break;
+        case 'github':
+          $(this).find('img').attr('src','./img/25231.png');
+        break;
+        default:
+          $(this).find('img').attr('src','./img/linkedin-logo-3.png');
+        break;
+      }
+    }
+  );
 
-$('#cookB').on('mouseover', function (e) {
-    $('#cookB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
-    $('#nag').css('display','none')
-    $('#happy').css('display','none')
-    $('#yahtzee').css('display','none')
-    $('#cook').css('display','inline-block');
-})
-
-$('#cookB').on('mouseout', function (e) {
-    $('#cookB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
-    $('#cook').css('display','none')
-})
-
-$('#happyB').on('mouseover', function (e) {
-    $('#happyB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
-    $('#cook').css('display','none')
-    $('#nag').css('display','none')
-    $('#yahtzee').css('display','none')
-    $('#happy').css('display','inline-block');
-})
-
-$('#happyB').on('mouseout', function (e) {
-    $('#happyB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
-    $('#happy').css('display','none')
-})
-
-$('#yahtzeeB').on('mouseover', function (e) {
-    $('#yahtzeeB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
-    $('#cook').css('display','none')
-    $('#happy').css('display','none')
-    $('#nag').css('display','none')
-    $('#yahtzee').css('display','inline-block');
-})
-
-$('#yahtzeeB').on('mouseout', function (e) {
-    $('#yahtzeeB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
-    $('#yahtzee').css('display','none')
-})
-
-$('#searchB').on('mouseover', function (e) {
-    $('#searchB img').css('box-shadow','5px 5px 5px grey').css('opacity','1')
-    $('#cook').css('display','none')
-    $('#happy').css('display','none')
-    $('#nag').css('display','none')
-    $('#search').css('display','inline-block');
-})
-
-$('#searchB').on('mouseout', function (e) {
-    $('#searchB img').css('box-shadow','2px 2px 2px grey').css('opacity','.85')
-    $('#search').css('display','none')
-})
-
-$('#about img').on('mouseover', function (e) {
-    $(this).css('box-shadow','5px 5px 5px grey')
-})
-
-$('#about img').on('mouseout', function (e) {
-    $(this).css('box-shadow','2px 2px 2px grey')
-})
-
-
-// $('.reachOut').eq(1).on('mouseover', function (e) {
-//   $(this).attr('src', "./img/number.png").css('width', '7vw')
-
-// })
-
-// $('.reachOut').eq(1).on('mouseout', function (e) {
-//   $(this).attr('src', "./img/phone.png").css('width', '4vw')
-
-// })
-// $('.reachOut').eq(0).on('mouseover', function (e) {
-//   $(this).attr('src', "./img/slackname.png").css('width', '7vw')
-
-// })
-
-// $('.reachOut').eq(0).on('mouseout', function (e) {
-//   $(this).attr('src', "./img/slack.png").css('width', '4vw')
-
-// })
-
-})
+});
 
 
 

@@ -69,7 +69,7 @@
   justify-content: center;
 }
 
-#nagB, #happyB, #cookB, #yahtzeeB, #searchB {
+#nagB, #happyB, #cookB, #yahtzeeB, #searchB, #iasipB{
   position: relative;
   display: inline-block;
   text-align: left;
@@ -101,7 +101,7 @@
   display: block;
 }
 
-#nag, #cook, #happy, #search {
+#nag, #cook, #happy, #search, #iasip {
   position: relative;
   margin-left: 3%;
   vertical-align: top;

@@ -48,6 +48,7 @@ $(()=> {
     switch($(this).attr('id')){
       case 'cookB':
         $('#happy').css('display', 'none');
+        $('#iasip').css('display', 'none');
         $('#nag').css('display', 'none');
         $('#search').css('display', 'none');
         $('#yahtzee').css('display', 'none');
@@ -55,31 +56,42 @@ $(()=> {
       break;
       case 'happyB':
         $('#happy').css('display', 'none');
+        $('#iasip').css('display', 'none');
         $('#nag').css('display', 'none');
         $('#search').css('display', 'none');
         $('#yahtzee').css('display', 'none');
         $('#happy').css('display', 'inline-block');
       break;
       case 'nagB':
-        $('#cook').css('display', 'none')
+        $('#cook').css('display', 'none');
         $('#happy').css('display', 'none');
+        $('#iasip').css('display', 'none');
         $('#search').css('display', 'none');
         $('#yahtzee').css('display', 'none');
         $('#nag').css('display', 'inline-block');
       break;
       case 'searchB':
-        $('#cook').css('display', 'none')
+        $('#cook').css('display', 'none');
         $('#happy').css('display', 'none');
+        $('#iasip').css('display', 'none');
         $('#nag').css('display', 'none');
         $('#yahtzee').css('display', 'none');
         $('#search').css('display', 'inline-block');
       break;
       case 'yahtzeeB':
-        $('#cook').css('display', 'none')
+        $('#cook').css('display', 'none');
         $('#happy').css('display', 'none');
+        $('#iasip').css('display', 'none');
         $('#nag').css('display', 'none');
         $('#search').css('display', 'none');
         $('#yahtzee').css('display', 'inline-block');
+      break;
+      case 'iasipB':
+        $('#cook').css('display', 'none');
+        $('#happy').css('display', 'none');
+        $('#nag').css('display', 'none');
+        $('#search').css('display', 'none');
+        $('#iasip').css('display', 'inline-block');
       break;
       default:
       break;
@@ -95,6 +107,7 @@ $(()=> {
   $('#nagB').hover(highlightImg, leaveDiv);
   $('#cookB').hover(highlightImg, leaveDiv);
   $('#happyB').hover(highlightImg, leaveDiv);
+  $('#iasipB').hover(highlightImg, leaveDiv);
   $('#searchB').hover(highlightImg, leaveDiv);
   $('#yahtzeeB').hover(highlightImg, leaveDiv);
 

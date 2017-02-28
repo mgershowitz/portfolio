@@ -1,5 +1,4 @@
-
-$(()=> {
+$(()=> {})
 
   //buttons navigate to different places on the page
   $('#projB').on('click', function(e){

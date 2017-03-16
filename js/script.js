@@ -1,5 +1,32 @@
 $(()=> {
 
+$('.image-container').hover(function(e){
+  $(this).find('.project-image').stop().animate({
+    'opacity': '1'
+  },300)
+  $(this).find('.project-text').stop().animate({'padding-bottom': '45px'},500);
+  $(this).find('.project-detail-text').removeClass('animated fadeOutLeft')
+  .css('display','block').addClass('animated fadeInLeft').one()
+}, function(e){
+  $(this).find('.project-image').stop().animate({
+    'opacity': '.3'
+  },300)
+  $(this).find('.project-text').stop().animate({'padding-bottom': '0px'},500);
+  $(this).find('.project-detail-text').removeClass('animated fadeInLeft')
+  //
+  .addClass('animated fadeOutLeft')
+  let $that = $(this)
+  setTimeout(function(){
+    $that.find('.project-detail-text').css('display','none')
+  },700);
+})
+
+
+
+
+
+
+
   //buttons navigate to different places on the page
   $('#projB').on('click', function(e){
       $('html, body').animate({

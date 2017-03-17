@@ -226,12 +226,9 @@ a {
    {
 
     * {
-      /*text-align: center;*/
       margin: 0 auto;
     }
-    /*body {
-      text-align: center;
-    }*/
+
 
     .nav {
       justify-content: center;
@@ -239,27 +236,30 @@ a {
 
     .nav-link {
       justify-content: center;
-      /*font-size: 20px;
-      margin-right: 25px;*/
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
     .nav-items {
-      margin-right: 11%;
+      margin: 0;
     }
 
     #projects {
       flex-direction: column;
       text-align: 0;
+      padding: 0;
     }
 
     .image-container {
-      width: 90%
+      height: 150px;
+      width: 90%;
+      margin-bottom: 15px;
     }
 
-    #nav ul {
-      display: none;
+    h3{
+      font-size: 2rem;
     }
-
 
     #projects img{
       display: inline-block;
@@ -269,47 +269,26 @@ a {
 
     #about {
       margin-top: 20%;
+      margin-bottom: 20%;
       display: flex;
       flex-direction: column;
+      height: 50vh;
     }
 
-    #about img {
-      width: 50vw;
-    }
-
-    #nav h2 {
-      left:5%;
-    }
-
-    #nav {
-      height: 12vh;
-    }
-
-    #bio {
-      text-align: center;
+    .about-me img {
+      width:80vw;
     }
 
     #bio p {
-      width: 70vw;
+      display: none;
     }
 
-    #contact img{
+   .contact-image img {
       width: 15vw;
+      margin: 0 15px;
     }
 
-    .mobileDesc {
-      display: inline-block;
-      }
 
-
-    .mobileDesc p, .mobileDesc h3 {
-      width: 70vw;
-    }
-
-    .mobileDesc h3 {
-      margin-top: 15%;
-      text-align: left;
-    }
 }
 
 

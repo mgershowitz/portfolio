@@ -23,7 +23,7 @@ $('.image-container').hover(function(e){
 
 
  let shrinkHeader = 100;
-  $(window).scroll(function() {
+  $(window).scroll(() => {
     let scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
         $('.nav').addClass('shrink')
@@ -32,20 +32,11 @@ $('.image-container').hover(function(e){
         $('.nav').removeClass('shrink')
 
       }
-      else {
-        $('.nav').removeClass('shrink')
-
-      }
   });
 
-function getCurrentScroll() {
+const getCurrentScroll = () => {
     return window.pageYOffset || document.documentElement.scrollTop;
     }
-
-
-
-
-
 
 
   //buttons navigate to different places on the page

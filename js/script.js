@@ -27,6 +27,9 @@ $('.image-container').hover(function(e){
     let scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
         $('.nav').addClass('shrink')
+      }
+      else {
+        $('.nav').removeClass('shrink')
 
       }
       else {
@@ -46,13 +49,6 @@ function getCurrentScroll() {
 
 
   //buttons navigate to different places on the page
-  $('#me').on('click', function(e){
-      $('html, body').animate({
-          scrollTop: 0
-      }, 500);
-     console.log('click')
-  })
-
   $('#proj-link').on('click', function(e){
       $('html, body').animate({
           scrollTop: $('#projects').offset().top
@@ -80,21 +76,7 @@ function getCurrentScroll() {
   $('.nav-link a').hover(turnBlue, turnWhite);
   $('#me').hover(turnBlue, turnWhite)
 
-  //returns the img to default opacity
-  const leaveDiv = function(e){
-    $(this).find('img').css('box-shadow','2px 2px 2px grey').css('opacity','.85');
-  }
 
-
-  //toggles drop shadow on my img
-  // $('#about img').hover(
-  //   function (e) {
-  //     $(this).css('box-shadow','5px 5px 5px grey');
-  //   },
-  //   function (e) {
-  //     $(this).css('box-shadow','2px 2px 2px grey');
-  //   }
-  // );
 
   //adds color to the conatct images by replacing the src
   $('.external-contact-icons').children().hover(

@@ -200,7 +200,7 @@ body {
 }
 .contact-image img {
   width: 3vw;
-  margin-left: -5px;
+  margin-left: 15px;
 }
 
 
@@ -215,9 +215,7 @@ a {
   color: #fff;
   margin-left: 20px;
 }
-.mobileDesc {
-  display: none;
-}
+
 
 @media only screen
   and (min-device-width: 320px)
@@ -243,6 +241,7 @@ a {
 
     .nav-items {
       margin: 0;
+      width: 50%;
     }
 
     #projects {

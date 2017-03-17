@@ -7,17 +7,28 @@ body {
   background-color: #212121;
 }
 
-#nav {
-  z-index: 1;
+.nav {
+  z-index: 2;
   position: fixed;
-  height:10vh;
+  background-color: rgba(33,33,33,.9);
+  height:12vh;
   width:99.5%;
-  border: 2px solid  #fff;
+  border-bottom: 1px solid  #fff;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  -webkit-transition: height 0.3s, background-color 0.3s, border-bottom 0.3s;
+  -moz-transition: height 0.3s, background-color 0.3s, border-bottom 0.3s;
+  transition: height 0.3s, background-color 0.3s, border-bottom 0.3s;
+
 }
 
+
+.nav.shrink {
+    height: 5vh;
+    border-bottom: 1px solid  rgba(70,70,70,.9);
+    background-color: rgba(75,75,75,.85);
+}
 
 
 .nav-items {
@@ -25,31 +36,6 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-
-
-.title {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.title h2 {
-  color: #FFFFFF;
-  font-family: sans-serif;
-  font-weight: lighter;
-  font-size: 4vh;
-  padding-left: 5%;
-  display: block;
-  width: 100%;
-  margin: auto 0;
-}
-
-/*#nav ul {
-  position: fixed;
-  width:400px;
-  margin-top:2%;
-  right: 3%;
-}*/
 
 .nav-link {
   color: #ffffff;
@@ -62,26 +48,18 @@ body {
 }
 
 .landing {
-  padding-top: 10vh;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.landing > h1 {
+.landing > * {
   color: #fff;
-  position: absolute;
 }
 
-.main-grid-blocks {
-  width: 25%;
-  height: calc(100% / 3);
-  border: 2px solid black;
-  box-sizing: border-box;
-}
 
 .displays {
   width:100%;
@@ -192,145 +170,50 @@ body {
 }
 
 
-
-
-
-
-
-.row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#nagB, #happyB, #cookB, #yahtzeeB, #searchB, #iasipB{
-  position: relative;
-  display: inline-block;
-  text-align: left;
-  width:28vw;
-}
-
-#imgContainer {
-  display: flex;
-  vertical-align: top;
-  flex:2;
-}
-
-#textContainer {
-  flex:1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width:28vw;
-  margin-left: -25%;
-}
-
-#projects section div ul{
-  display: inline-block;
-  text-align: left;
-  padding-left: 0;
-}
-
-#projects section div li{
-  display: block;
-}
-
-#nag, #cook, #happy, #search, #iasip {
-  position: relative;
-  margin-left: 3%;
-  vertical-align: top;
-  display: none;
-  width: 30vw;
-}
-
-
-#default-img {
-  box-shadow: 5px 5px 5px grey;
-  opacity: 1;
-}
-
-#yahtzee {
-  position: relative;
-  margin-left: 3%;
-  vertical-align: top;
-  width: 30vw;
-}
-
 #bio {
   text-align: left;
 }
 
 #bio p {
-  /*top: 30%;*/
+  color: #fff;
   width: 40vw;
 }
 
 #about {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
 }
 
-.about-me {
-  flex: 1;
-  text-align: right;
+.about-me img{
+  border-radius: 20px;
 }
 
-.about-me img {
-  width: 15vw;
-  border: 3px #B6B6B6 solid;
-  border-radius: 150px;
-  box-shadow: 2px 2px 2px grey;
-  margin-right: 15%;
-
-}
-
-#contact {
-  background: #2196F3;
-  text-align: center;
-  box-shadow: 2px 2px 2px grey;
-  width: 100%;
+.external-contact-icons{
   display: flex;
-  align-items: center;
-  height: 15vh;
-  margin-left: -2%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.contact-image img {
+  width: 3vw;
+  margin-left: -5px;
 }
 
 
-
-#contact div{
-  flex: 1;
-}
-
-#contact img{
-  width:4vw;
-  margin: 4%;
-}
-
-
-
-a{
+a {
   text-decoration: none;
   margin-left:20px;
-
+  color: #fff;
 }
 
-#number {
-  position:absolute;
-  color: white;
-  width: 400px;
-  top:-17%;
-  left:27%;
+
+.footer {
+  color: #fff;
+  margin-left: 20px;
 }
-
-#number li{
-  margin:0;
-  padding:6%;
-  width:100px;
-
-}
-
 .mobileDesc {
   display: none;
 }

@@ -12,155 +12,75 @@
   <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
-  <header id='nav'>
-    <section class='animated bounceInLeft'>
-      <h2 id='me'>Matt Gershowitz</h2>
-        <ul>
-          <li class='navB' id='projB'>projects</li>
-          <li class='navB' ><a href="https://drive.google.com/open?id=0BwoaQx52ve-LVXA4NmZKMDBYYkk">resume</a></li>
-          <li class='navB' id='ringB'>contact</li>
-        </ul>
-    </section>
+  <header class='nav'>
+    <div class='nav-items'>
+      <div class='nav-link' id='proj-link'>projects</div>
+      <div class='nav-link'><a href="https://drive.google.com/open?id=0BwoaQx52ve-LVXA4NmZKMDBYYkk">resume</a></div>
+      <div class='nav-link' id='contact-link'>contact</div>
+    </div>
   </header>
-  <div id='projects' class='displays'>
-      <section>
-          <div id="imgContainer">
-          <div class="row">
-            <div id="yahtzeeB">
-              <div class="mobileDesc">
-                <h3>FlakeBot</h3>
-              </div>
-              <a href="https://frozen-earth-81466.herokuapp.com/"><img id='default-img' src="http://i.imgur.com/5lPYEMt.jpg" alt=""></a>
-              <div class="mobileDesc">
-                <p>React.js, Express, Node.js, PostgreSQL</p>
-              </div>
-            </div>
-            <div id="nagB">
-              <div class="mobileDesc">
-                <h3>Netflix and Grill</h3>
-              </div>
-              <a href="https://immense-falls-96047.herokuapp.com/"><img class='images' src="http://i.imgur.com/fajML5u.jpg" alt=""></a>
-              <div class="mobileDesc">
-                <p>Ruby on Rails, PostgreSQL, JQuery</p>
-              </div>
-            </div>
-            <div id="happyB">
-              <div class="mobileDesc">
-                <h3>Happy Hour</h3>
-              </div>
-              <a href="https://stunning-lake-clark-17018.herokuapp.com/"><img class='images' src="http://i.imgur.com/97bBVoJ.jpg" alt=""></a>
-              <div class="mobileDesc">
-                <p>Node.js, Express, MongoDB, Javascript</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div id="cookB">
-              <div class="mobileDesc">
-                <h3>CookIt</h3>
-              </div>
-              <a href="https://thawing-beyond-47113.herokuapp.com/"><img class='images' src="http://i.imgur.com/qHuldpz.jpg" alt=""></a>
-              <div class="mobileDesc">
-                <p>React.js, Express, Node.js, PostgreSQL, Javascript</p>
-              </div>
-            </div>
-            <div id='searchB'>
-              <div class="mobileDesc">
-                <h3>Search Words</h3>
-              </div>
-              <a href="https://matt-words.herokuapp.com/"><img class='images' src="http://i.imgur.com/0KsHoPE.jpg" alt=""></a>
-              <div class="mobileDesc">
-                <p>Node.js, Express.js, MongoDB, Javascript</p>
-              </div>
-            </div>
-            <div id='iasipB'>
-              <div class="mobileDesc">
-                <h3>It's always Sunny Now</h3>
-              </div>
-              <a href="https://secure-dusk-85442.herokuapp.com/"><img class='images' src="http://i.imgur.com/1Pn5stP.jpg" alt=""></a>
-              <div class="mobileDesc">
-                <p>Node.js, Express.js, MongoDB, Javascript</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id='textContainer'>
-          <div id="nag">
-            <h3>Netflix and Grill</h3>
-            <p>Neflix and Grill is an app that allows you to search various television shows by title. Once the search results are returned, you can add them to you "BBQueue" where you can review your choices and see what food items have been paired.</p>
-            <ul>
-              <li>- Ruby on Rails</li>
-              <li>- PostgreSQL</li>
-              <li>- JQuery</li>
-            </ul>
-          </div>
-          <div id="cook">
-            <h3>CookIt</h3>
-            <p>CookIt allows you to search for recipes by either your favorite cuisine or by any ingriendents you have in your kitchen. Returning various options, the user can choose a recipe, be given a list of ingredients, and compare it to what is already stored in their pantry, letting them know what they need to buy to prepare the meal</p>
-            <ul>
-              <li>- React.js</li>
-              <li>- Express</li>
-              <li>- Node.js</li>
-              <li>- PostgreSQL</li>
-              <li>- Javascript</li>
-            </ul>
-          </div>
-          <div id='happy'>
-            <h3>Happy Hour</h3>
-            <p>Happy Hour poses a series of questions to the potential bar fly in order to gauge how they're feeling that day and ultimately what drink would best suite them. It also pairs the drink with a nice drink related quote.</p>
-            <ul>
-              <li>- Node.js</li>
-              <li>- Express</li>
-              <li>- MongoDB</li>
-              <li>- Javascript</li>
-            </ul>
-          </div>
-          <div id='yahtzee'>
-            <h3>FlakeBot</h3>
-            <p>FlakeBot is your scheduling buddy that let's your search for events in your city. He can send text reminders for the event and will let you know your most upcoming event. Don't worry, he definitely will make it this time</p>
-            <ul>
-              <li>- React.js</li>
-              <li>- Express</li>
-              <li>- Node.js</li>
-              <li>- PostgreSQL</li>
-              <li>- Javascript</li>
-            </ul>
-          </div>
-          <div id='search'>
-            <h3>Search Words</h3>
-            <p>Have you ever been curious what letters are involved with what words? Then try this app on for size and get a dictionary's perspective on what letters create what words</p>
-            <ul>
-              <li>- Express</li>
-              <li>- Node.js</li>
-              <li>- MongoDB</li>
-              <li>- Javascript</li>
-            </ul>
-          </div>
-          <div id='iasip'>
-            <h3>It's Always Sunny Now</h3>
-            <p>They gang's schedule is always pretty pack with the next scheme, hoodwink, or grift. Never miss what they're up to again with the always sunny now app</p>
-            <ul>
-              <li>- Express</li>
-              <li>- Node.js</li>
-              <li>- MongoDB</li>
-              <li>- Javascript</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <div class='landing'>
+    <h1>Matt Gershowitz</h1>
+    <h4>- Full Stack Developer -</h4>
   </div>
+  <div id='projects' class='displays'>
+      <div class="image-container">
+        <div class="project-image flakebot"></div>
+        <div class="project-text-container">
+          <a href=""><h3 class="project-text">Flakebot</h3></a><br />
+          <a href=""><h4 class="project-detail-text">see on github</h4></a>
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="project-image netflix"></div>
+        <div class="project-text-container">
+          <a href=""><h3 class="project-text">Netflix & Grill</h3></a><br />
+          <a href=""><h4 class="project-detail-text">see on github</h4></a>
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="project-image cookit"></div>
+        <div class="project-text-container">
+          <a href=""><h3 class="project-text">CookIt</h3></a><br />
+          <a href=""><h4 class="project-detail-text">see on github</h4></a>
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="project-image happy-hour"></div>
+        <div class="project-text-container">
+          <a href=""><h3 class="project-text">Happy Hour</h3></a><br />
+          <a href=""><h4 class="project-detail-text">see on github</h4></a>
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="project-image words"></div>
+        <div class="project-text-container">
+          <a href=""><h3 class="project-text">Search Words</h3></a><br />
+          <a href=""><h4 class="project-detail-text">see on github</h4></a>
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="project-image sunny"></div>
+        <div class="project-text-container">
+          <a href=""><h3 class="project-text">It's Always Sunny Now</h3></a><br />
+          <a href=""><h4 class="project-detail-text">see on github</h4></a>
+        </div>
+      </div>
+    </div>
+
   <div id="about">
       <div class='about-me'>
-        <img src="./img/mattcopy.png" alt="">
+        <img src="https://media.giphy.com/media/j5QcmXoFWl4Q0/giphy.gif" alt="">
       </div>
-      <div class='about-me' id="bio">
-        <p>Matt Gershowitz is a Full Stack Web Developer and New York native. Specializing in Javascript, Node.js, Express.js, React.js, PostgreSQL, and Ruby on Rails. Matt is also associated with the independent film production company; Congested Cat, and band Plum Dumpster.</p>
+      <div  id="bio">
+        <p>Matt Gershowitz is a Full Stack Web Developer and New York native. He has experience building applications using frontend libraries such as React.js or JQuery, as well as with robust backend frameworks such as Rails or Express. He is also well versed in database languages such as SQL and mongoDB. Matt is also associated with the independent film production company; Congested Cat, and band Plum Dumpster.</p>
+        <div class="external-contact-icons">
+          <div class='contact-image' id="github"><a href="https://github.com/mgershowitz"><img src="./img/25231.png" alt=""></a></div>
+          <div class='contact-image' ><a href="https://www.linkedin.com/in/mgershowitz"><img src="./img/linkedin-logo-3.png" alt=""></a></div>
+          <div class='contact-image' id="email"><a href="mailto:mattgershowitz1@gmail.com"><img src="./img/email.png" alt=""></a></div>
+        </div>
       </div>
   </div>
-  <div id='contact'>
-      <div id='email'><a href="mailto:mattgershowitz1@gmail.com"><img src="./img/email.png" alt=""></a></div>
-      <div id="github"><a href="https://github.com/mgershowitz"><img src="./img/25231.png" alt=""></a></div>
-      <div id="linkedin"><a href="https://www.linkedin.com/in/mgershowitz"><img src="./img/linkedin-logo-3.png" alt=""></a></div>
-  </div>
+<div class='footer'>Matt Gershowitz &copy 2017</div>
 </body>
 </html>

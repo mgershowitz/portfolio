@@ -27,11 +27,11 @@ $('.image-container').hover(function(e){
     let scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
         $('.nav').addClass('shrink')
-        console.log('shrink!!');
+        
       }
       else {
         $('.nav').removeClass('shrink')
-        console.log('don\'t!!');
+        
       }
   });
 

@@ -56,16 +56,26 @@ const getCurrentScroll = () => {
 
   //highlights the nav buttons light blue
   const turnBlue = function(e){
-    $(this).css('color', '#1976D2');
+    $(this).css('color', '#1976D2')
   }
 
   const turnWhite = function(e){
-    $(this).css('color', '#ffffff');
+    $(this).css('color', '#ffffff')
+  }
+
+  const turnBorderBlue = function(e){
+    $(this).css('color', '#1976D2').css('border', '2px solid #1976D2');
+  }
+
+  const turnBorderWhite = function(e){
+    $(this).css('color', '#ffffff').css('border', '2px solid #fff');
   }
 
   $('.nav-link').hover(turnBlue, turnWhite);
   $('.nav-link a').hover(turnBlue, turnWhite);
   $('#me').hover(turnBlue, turnWhite)
+  $('.project-text').hover(turnBlue, turnWhite);
+  $('.project-detail-text').hover(turnBorderBlue, turnBorderWhite);
 
 
 
